@@ -1,0 +1,91 @@
+                                                                    
+
+
+                                                                      ¡¡¡¡¡INICIALIZAR LISTAS CON NULL!!!!!!
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||CAMBIA PRIM X ULT||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+nodo* Intercambia_primero_por_ultimo(nodo* l){
+    nodo* aux = NULL;
+    int primero, ultimo;
+    if (l == NULL){
+        printf("Lista vacía");
+        return l;
+    }
+    else{
+        aux=l;
+        while(aux->sig!=NULL){
+            aux=aux->sig;
+        }
+        ultimo = aux->dato;
+        primero = l->dato;
+
+        l->dato = ultimo;
+        aux->dato = primero;
+        return l;
+    }
+}
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||ADAPTACIÓN|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+1)Tipo de dato que retorna
+2)Tipos de datos que recibe
+3)Tipos de nodo en declaración de variables
+4)Tipos de nodo en malloc
+5)Cuando cargo el nuevo nodo, hay que cambiar nodo->dato por nodo->elcampoquetengaesenodo
+6)Actualizar los numeros de exit(!!!)
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||COMPARAR VALORES DE TODA UNA LISTA||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Cuando la recorro uso:
+while (l!=NULL), de este modo va a comparar hasta el último valor
+
+Cuando quier saber si el primero esta vacio:
+while(l!=NULL)
+
+Para avanzar al último nodo:
+while(aux->sig!=NULL)
+        aux=aux->sig;
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||MENU CICLICO|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+int main(){
+    int opcion;
+    
+    do{
+        printf("1__\n");                
+        printf("2__\n");       
+        printf("3__\n");
+        printf("4__\n");
+        printf("5__\n");
+        printf("6__Salir\n");
+        printf("Seleccione una opción del menú: ");
+        scanf("%d",&opcion);
+        switch(opcion)
+        {
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            case 6:
+                printf("Finalizó programa\n");
+                break;
+            default:
+                printf("Opción inválida\n");
+        }
+    }while (opcion != 6);
+    return 0;
+}
+
+
+
+

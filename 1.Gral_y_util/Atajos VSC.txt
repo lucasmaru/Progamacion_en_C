@@ -1,0 +1,18 @@
+ctrl+shift+s: guardar como
+ctrl+s: guardar
+ctrl+ñ : despliega terminal o repliega terminal
+ctrl+l: limpia terminal
+ctrl+z: deshacer
+ctrl+b: se contrae o expande el explorer
+cd+direccíon: me mueve de directorio
+cd .. :Atras en el directorio
+compilar: gcc nombre.c -o nombreejecutable
+ejecutar: ./nombre
+ctrl+a: selecciona todo el código
+ctrl+c: detiene ejecución
+gcc -Wall -Werror -pedantic nombre.c -o nombre: compila con errores más sutiles
+incluye la libreria math.h con el -lm:gcc nombre.c -o nombreejecutable -lm
+compilar con Vallgrind (problemas con memoria): gcc -g nombre.c -o ejecutable
+Ejecutar con Vallgrind (segmentation foul):valgrind --leak-check=yes ./ejecutable
+
+
